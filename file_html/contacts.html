@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <link href="/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <div class="row"> <!-- Основной блок для работы с колонками -->
+            <div class="col-3" style = "background: #333; height: 100vh; display: flex; flex-direction: column; justify-content: flex-end;"> <!-- Колонка шириной 3/12 для размещения меню -->
+                <div class="row mt-3">
+                    <div class="col-2" style = "background: #333;">
+                        <a class="navbar-brand p-0 me-0 me-lg-2" href="https://getbootstrap.com/" aria-label="Bootstrap" style = "color: #332d9a;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1" viewBox="0 0 118 94" role="img">
+                            <title>Bootstrap</title>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor">
+                            </path>
+                        </svg>
+                        </a>
+                    </div>
+                    <div class="col-9" style = "background: #333;">
+                        <h2 style = "color: #332d9a;">Меню</h2><br>
+                    </div>
+                </div>
+                <ul class="list-group" style = "background: #333;">
+                    <li class="list-group-item" style = "background: #333;"><a href="#">Главная</a></li>
+                    <li class="list-group-item" style = "background: #333;"><a href="#">Категории</a></li>
+                    <li class="list-group-item" style = "background: #333;"><a href="#">Категория 1</a></li>
+                    <li class="list-group-item" style = "background: #333;"><a href="#">Контакты</a></li>
+                </ul>
+
+                <div class="btn-group dropup mt-auto">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Пользователь
+                    </button><!-- Кнопка выпадающего меню по умолчанию -->
+                    <ul class="dropdown-menu" style = "background: #333;">
+                        <li><span class="dropdown-item-text" style = "color: #d8d8dd;">Профиль</span></li>
+                        <li><a class="dropdown-item" href="#" style = "color: #d8d8dd;">Выход</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-9 text-center mt-5"> <!-- Колонка шириной 9/12 для размещения основного контента -->
+                <h1>Контакты</h1>
+                <div class="row mt-5"> <!-- Дополнительный вложенный блок для работы с колонками -->
+                    <div class="col-1"></div>
+                    <div class="col-4 text-start "> <!-- Колонка для отображения формы заполнения-->
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label text-start">Имя</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            </div>
+                            <label for="exampleInputEmail1" class="form-label">Почта</label>
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" aria-describedby="addon-wrapping">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Сообщение</label>
+                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Отправить</button>
+                        </form>
+                    </div>
+                    <div class="col-1"></div>
+                    <div class="col-5 text-start"> <!-- Колонка для отображения информации-->
+                        <div class="card" style="width: 18rem;">
+                            <div class="card-body">
+                                <h3 class="card-title">Наши контакты</h3>
+                                    <p class="card-text">Режим работы: Пн.-Пт. 9:00–18:00.</p>
+                                    <p class="card-text">Телефон: 8 (495) 12-34-567.</p>
+                                    <p class="card-text">e-mail: example.com.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap JavaScript -->
+    </body>
+</html>
